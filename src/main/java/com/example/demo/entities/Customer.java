@@ -56,4 +56,7 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private Set<Cart> carts;
+
+    public void add(Cart cart) {
+    }
 }
