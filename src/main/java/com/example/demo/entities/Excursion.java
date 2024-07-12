@@ -1,4 +1,5 @@
 package com.example.demo.entities;
+
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -49,3 +50,4 @@ public class Excursion {
     @ManyToMany(mappedBy = "excursions")
     private Set<CartItem> cartItems;
 }
+
